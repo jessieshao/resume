@@ -15,7 +15,7 @@ body{
   .topNavBar .logo{
     font-family: Malgun Gothic;
     font-size: 24px;
-    padding-top: 1px;
+    padding-top: 3px;
     padding-left: 5px;
   }
   .topNavBar .logo .rs{
