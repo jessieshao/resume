@@ -127,11 +127,11 @@ body{
   padding: 5px 0;
 }
 .usercard dl dt{
-  width: 30%;
+  width: 130px;
   font-weight: bold;
 }
 .usercard dl dd{
-  width: 70%;
+  width: 335px;
   color: #9da0a7;
 }
 .usercard .text hr{
