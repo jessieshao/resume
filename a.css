@@ -1,17 +1,28 @@
 body{
-    background:grey;
+    background: #DCC9BC;
+    margin:0;
   }
   a{
     text-decoration: none;
+  }
+  *{
+    margin: 0;
+    padding: 0;
   }
   .clearfix::after{
     content: '';
     display: block;
     clear: both;
   }
-  
-  .topNavBar{  
+
+  .topNavBar{
+  }
+  .topNavBarInner{  
     padding-top: 8px;
+    position: fixed;
+    width: 100%;
+    padding-left: 8px;
+    padding-right: 8px;
   }
   .topNavBar .logo{
     font-family: Hiragino Kaku Gothic Std;
@@ -30,6 +41,7 @@ body{
     font-size: 13px;
     padding-top:12px;
     padding-bottom:8px;
+    padding-right: 30px;
   }
   .topNavBar nav a{
     color: rgba(255, 255, 255, 0.7);
@@ -40,6 +52,7 @@ body{
   .topNavBar nav ul{
     padding: 0;
     margin: 0;
+    padding-top: 5px;
     list-style: none;
   }
   .topNavBar nav ul>li{
@@ -53,5 +66,97 @@ body{
   .topNavBar nav ul>li>a:hover{
     border-bottom-color: #DC6465;
   }
+  .banner{
+    height: 515px;
+    margin: 0;
+    width: 100%;
+    background: center,center;
+    background-size: cover;
+  }
   
+  .banner .mask{
+    height: 515px;
+    background-color: rgba(0, 0, 0, 0.75);
+
+  }
   
+  .usercard{
+    max-width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+    background: #FFFFFF;
+  }
+.usercard .hello{
+  background: #e6686a;
+  color: white;
+  display: inline-block;
+  padding: 4px 16px;
+  line-height: 22px;
+  position: relative;
+}
+.usercard .hello .triangle{
+  display: inline-block;
+  border: 10px solid transparent;
+  border-left-color: #e6686a;
+  border-top-width: 0px;
+  position: absolute;
+  left:4px;
+  top:100%;
+}
+.usercard .pictureAndText{
+  padding-bottom: 30px;
+}
+.usercard .picture{
+  float: left;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+.usercard .text{
+  float: left;
+  padding-left: 65px;
+  padding-top: 70px;
+  width: 465px;
+}
+.usercard .text h1{
+  padding-top: 25px;
+  padding-bottom: 5px;
+}
+.usercard dl dt,
+.usercard dl dd{
+  float: left;
+  padding: 5px 0;
+}
+.usercard dl dt{
+  width: 30%;
+  font-weight: bold;
+}
+.usercard dl dd{
+  width: 70%;
+  color: #9da0a7;
+}
+.usercard .text hr{
+  border: 1px solid #DEDEDE;
+  margin: 20px 0;
+}
+.usercard > footer.media{
+  background:#e6686a;
+  border: 1px solid red;
+  text-align: center;
+}
+.usercard svg{
+  width: 30px;
+  height: 30px;
+  fill: white;
+  vertical-align: top;
+}
+.usercard > footer.media > a{
+  display: inline-block;
+  border-radius: 50%;
+  width:40px;
+  padding: 5px 0;
+  line-height: 30px;
+  margin: 16px;
+}
+.usercard > footer.media > a:hover{
+  background: #cf5d5f;
+}

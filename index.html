@@ -4,36 +4,50 @@
   <meta charset="utf-8">
   <title>我的简历</title>
   <link rel="stylesheet" href="./a.css">
+  <script src="//at.alicdn.com/t/font_660750_5a0awx8gzptd42t9.js"></script>
+  <style type="text/css">
+    .icon {
+       width: 1em; height: 1em;
+       vertical-align: -0.15em;
+       fill: currentColor;
+       overflow: hidden;
+    }
+</style>
 </head>
 <body>
-  <div class="topNavBar clearfix">
-    <a href="#" class="logo" alt="logo" style="float:left";>
-      <span class="rs"><strong>RS</strong></span><span class="card"><strong>card</strong></span>
-    </a>
-    <nav class="clearfix">
-      <ul style="float:right";>
-        <li><a href="#">其它</a></li>
-        <li><a href="#">联系方式</a></li>
-        <li><a href="#">日历</a></li>
-        <li><a href="#">博客</a></li>
-        <li><a href="#">作品</a></li>
-        <li><a href="#">技能</a></li>
-        <li><a href="#">关于</a></li>
-      </ul>
-    </nav>    
+  <div class="topNavBar">
+    <div class="topNavBarInner clearfic">
+        <a href="#" class="logo" alt="logo" style="float:left";>
+            <span class="rs"><strong>RS</strong></span><span class="card"><strong>card</strong></span>
+          </a>
+          <nav class="clearfix">
+            <ul style="float:right";>
+              <li><a href="#">其它</a></li>
+              <li><a href="#">联系方式</a></li>
+              <li><a href="#">日历</a></li>
+              <li><a href="#">博客</a></li>
+              <li><a href="#">作品</a></li>
+              <li><a href="#">技能</a></li>
+              <li><a href="#">关于</a></li>
+            </ul>
+          </nav>    
+    </div>
   </div>
-  <div class="banner" style="background-image:url(#)"></div>
-  <main>
-    <div class="card">
-      <div class="pictureAndText">
+  <div class="banner" style="background-image:url(./img/banner.png); ">
+    <div class="mask"></div>
+  </div>
+    <div class="usercard">
+      <div class="pictureAndText clearfix">
         <div class="picture">
-          <img src="#" alt="照片">
+          <img src="./img/avatar.png" alt="照片">
         </div>
-        <div class="test">
-          <span class="hello">hello</span>
-          <h1>jessie</h1>
-          <p>前端开发</p>
-          <br>
+        <div class="text">
+          <span class="hello">hello
+            <span class="triangle"></span>
+          </span>
+          <h1>邵亚文</h1>
+          <p>前端开发工程师</p>
+          <hr>
           <dl>
             <dt>年龄</dt>
             <dd>21</dd>
@@ -43,20 +57,29 @@
             <dd>18101357268</dd>
             <dt>邮箱</dt>
             <dd>505133853@qq.com</dd>
+            <dt>毕业院校</dt>
+            <dd>北京科技大学</dd>
           </dl>
         </div>
       </div>
-    </div>
-    <footer class="media">
-      <a href="href(#)"><img src="" alt="">微信</a>
-      <a href="href(#)"><img src="" alt="">QQ</a>
-      <a href="href(#)"><img src="" alt="">github</a>
-      <a href="href(#)"><img src="" alt="">...</a>
-      <a href="href(#)"><img src="" alt="">...</a>
-      <a href="href(#)"><img src="" alt="">...</a>
-      <a href="href(#)"><img src="" alt="">...</a>
-    </footer>
-  </main>
+     <footer class="media">
+      <a href="#">
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-github"></use>
+        </svg>
+      </a>
+      <a href="#">
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-blog"></use>
+        </svg>
+      </a>
+      <a href="#">
+        <svg class="icon" aria-hidden="true">
+            <use xlink:href="#icon-weixin-copy"></use>
+        </svg>
+      </a>
+     </footer>
+  </div>>
   <a href="#" class="button"></a>
   <p>介绍自己</p>
   <main>
