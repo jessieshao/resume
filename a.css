@@ -140,7 +140,6 @@ body{
 }
 .usercard > footer.media{
   background:#e6686a;
-  border: 1px solid red;
   text-align: center;
 }
 .usercard svg{
