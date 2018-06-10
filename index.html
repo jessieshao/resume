@@ -24,19 +24,30 @@
     <div class="loading"></div>
   </div>
   <div class="topNavBar">
-    <div class="topNavBarInner clearfic">
+    <div id="topNavBarInner"  class="topNavBarInner clearfic">
         <a href="#" class="logo" alt="logo" style="float:left";>
             <span class="rs"><strong>RS</strong></span><span class="card"><strong>card</strong></span>
           </a>
           <nav class="clearfix">
             <ul style="float:right";>
-              <li><a href="#">其它</a></li>
-              <li><a href="#">联系方式</a></li>
-              <li><a href="#">日历</a></li>
-              <li><a href="#">博客</a></li>
-              <li><a href="#">作品</a></li>
-              <li><a href="#">技能</a></li>
-              <li><a href="#">关于</a></li>
+              <li class="menuTigger"><a href="#else">其它</a></li>
+              <li class="menuTigger"><a href="#connect">联系方式</a></li>
+              <li class="menuTigger"><a href="#time">日历</a></li>
+              <li class="menuTigger"><a href="#blog">博客</a>
+                <ul class="submenu">
+                    <li>博客一</li>
+                    <li>博客二</li>
+                  </ul>
+              </li>
+              <li class="menuTigger"><a href="#project">作品</a>
+                <ul class="submenu">
+                  <li>作品一</li>
+                  <li>作品二</li>
+                  <li>作品三</li>
+                </ul>
+              </li>
+              <li class="menuTigger"><a href="#skill">技能</a></li>
+              <li class="menuTigger"><a href="#about">关于</a></li>
             </ul>
           </nav>    
     </div>
@@ -45,7 +56,7 @@
     <div class="mask"></div>
   </div>
   <main style="margin-top: -340px">
-    <div class="usercard">
+    <div id="about" class="usercard">
       <div class="pictureAndText clearfix">
         <div class="picture">
           <img src="./img/avatar.png" alt="照片">
@@ -100,7 +111,7 @@
     </a>
   </p>
   <main>
-    <h2>技能</h2>
+    <h2 id= "skill">技能</h2>
     <section class="skills">
       <ol class="clearfix"> 
         <li>
@@ -147,7 +158,7 @@
         </li>
       </ol>
     </section>
-    <h2>作品集</h2>
+    <h2 id="project">作品集</h2>
     <section class="portfolie">
       <nav>
         <ol class="clearfix">
@@ -185,6 +196,25 @@
   </main>
 </body>
 <script>
-  siteWelcome.classList.remove('active')
+  setTimeout(function(){
+    siteWelcome.classList.remove('active')
+  },100)
+  window.onscroll = function(xxx){
+    if(window.scrollY > 0){
+      topNavBarInner.classList.add('sticky')
+    }else{
+      topNavBarInner.classList.remove('sticky')
+    }
+  }
+  //找弟弟
+  let liTags = document.getElementsByClassName('menuTigger')
+  for(let i=0; i<liTags.length; i++){
+    liTags[i].onmouseenter = function(x){
+      x.currentTarget.classList.add('active')
+      }
+    liTags[i].onmouseleave = function(x){
+      x.currentTarget.classList.remove('active')
+      }
+  } 
 </script>
 </html>
