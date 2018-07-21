@@ -32,13 +32,3 @@ function findClosetAndRemoveOffset(){
     li.classList.add('highlight')
 }
 }.call()
-
-
-window.jQuery.ajax({
-    url: '/xxx',
-    method: 'get',
-    headers: {
-      'content-type':'application/x-www-form-urlencoded',
-      'frank': '18'
-    }
-  })
