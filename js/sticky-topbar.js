@@ -1,3 +1,4 @@
+!function(){
 window.addEventListener('scroll',function(x){
     if(window.scrollY > 0){
       topNavBarInner.classList.add('sticky')
@@ -5,3 +6,4 @@ window.addEventListener('scroll',function(x){
       topNavBarInner.classList.remove('sticky')
     }
 })
+}.call()

@@ -1,4 +1,4 @@
-
+!function(){
   //找弟弟
   let liTags = document.querySelectorAll('nav.menu > ul > li')
   for(let i=0; i<liTags.length; i++){
@@ -42,3 +42,4 @@
 
     }
   }
+}.call()

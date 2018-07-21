@@ -1,3 +1,4 @@
+!function(){
 let specialTags = document.querySelectorAll('[data-x]')
     let minIndex = 0
     for(i=1;i<specialTags.length;i++){
@@ -30,3 +31,14 @@ function findClosetAndRemoveOffset(){
     }
     li.classList.add('highlight')
 }
+}.call()
+
+
+window.jQuery.ajax({
+    url: '/xxx',
+    method: 'get',
+    headers: {
+      'content-type':'application/x-www-form-urlencoded',
+      'frank': '18'
+    }
+  })
